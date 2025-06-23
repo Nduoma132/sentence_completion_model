@@ -82,10 +82,10 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### 1. Run the main Python script:
+### 1. Open the notebook in Jupyter and run all cells:
 
 ```bash
-python sentence_completion.ipynb
+jupyter notebook sentence_completion.ipynb
 ```
 
 ### 2. Enter your starting sentence:
