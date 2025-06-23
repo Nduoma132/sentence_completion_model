@@ -20,7 +20,6 @@ This project implements a **word prediction and sentence completion model** usin
 * [Contributors](#contributors)
 * [License](#license)
 
----
 
 ## 🏗️ Project Structure
 
@@ -35,11 +34,9 @@ This project implements a **word prediction and sentence completion model** usin
 
 ## 🎯 Use Cases
 
-* Autocomplete features in text editors.
-* Predictive typing in chatbots and messaging apps.
-* Assistive writing tools.
-* Educational applications to improve writing skills.
-
+* Autocomplete features in gaming platforms: This model can be integrated into game review or story-writing platforms to provide autocomplete suggestions as gamers type.
+* Predictive typing in gaming chatbots and apps: The model can power predictive typing in gaming forums, multiplayer chats, or chatbot assistants, suggesting the next word or phrase based on common gaming dialogue.
+* Assistive writing tool for gamers that suggests emotionally relevant and creative completions while writing reviews, stories, or content. It can help spark creativity and maintain the thematic tone often found in gaming narratives.
 
 
 ## 📂 Dataset
@@ -81,7 +78,7 @@ cd sentence-completion-model
 pip install -r requirements.txt
 ```
 
----
+
 
 ## 🚀 Usage
 
@@ -103,48 +100,37 @@ Enter text here: The world of video games
 Generated sentence: The world of video games is fun to play and can be educational as well ...
 ```
 
----
 
 ## 📝 Example
 
 ```python
 # Sample input
-"The sun is shining bright"
+"The world of video games"
 
 # Sample output
-"The sun is shining bright and the sky is clear with birds flying around"
+"the world of video games and games a to and of a and in the gaming the a a of and a in games to of a the the and gaming a and of and a of in and the..."
 ```
 
----
 
 ## ⚠️ Limitations
 
-* Relies on TF-IDF, which ignores word order and context depth.
-* Model accuracy depends heavily on the size and diversity of the input corpus.
+* The model works better on vocabulary relating to video games and may struggle to perform on data from other fields.
+* Small data sample: Model accuracy depends heavily on the size and diversity of the input or training data.
 * Uses random selection from top predictions, which may produce inconsistent results.
-* Limited to the vocabulary present in the training corpus.
 
----
 
 ## 🔧 Future Improvements
 
 * Incorporate **deep learning models** (e.g., LSTM, GRU, Transformers) for better sequence learning.
-* Apply **beam search** instead of random selection for more coherent sentence generation.
-* Expand the dataset to improve vocabulary coverage.
-* Deploy the model via a **Streamlit** app or web API for easy interaction.
+* Enhanced by applying advanced augmentation techniques to reduce the influence of stop words on its performance.
+* Expand the dataset to improve vocabulary coverage across more domains.
 
----
 
 ## 👨‍💻 Contributors
 
-* [TeSA Artificial Intelligence Specialization]
+TeSA Artificial Intelligence Specialization
 
----
 
 ## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-If you’d like, I can help you structure the `requirements.txt` file and organize the Python script for better modularization. Let me know!
