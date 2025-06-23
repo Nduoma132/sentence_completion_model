@@ -95,20 +95,13 @@ Enter text here: The world of video games
 ```
 
 ### 3. Example Output:
-
-```text
-Generated sentence: The world of video games is fun to play and can be educational as well ...
 ```
+# Sample output from Naive Bayes Model
+"the world of video games and games a to and of a and in the gaming the a a of and a in games to of a the the and gaming a and of and a of in and the a and a the the and of a of and the gaming and and and..."
 
 
-## 📝 Example
-
-```python
-# Sample input
-"The world of video games"
-
-# Sample output
-"the world of video games and games a to and of a and in the gaming the a a of and a in games to of a the the and gaming a and of and a of in and the..."
+# Sample output from Random Forest Model
+"the world of video games is a ride wild through pot and cultural exchange and inside through life and only only digital getting gold creeper and in of serious games provide the let provide of gaming provides cognitive exercise alternatives gaming families gaming demonstrate and skill technical mentorship among among and the in tension digital..."
 ```
 
 
@@ -128,7 +121,7 @@ Generated sentence: The world of video games is fun to play and can be education
 
 ## 👨‍💻 Contributors
 
-TeSA Artificial Intelligence Specialization
+TeSA Artificial Intelligence Specialization (Cohort 3)
 
 
 ## 📝 License
