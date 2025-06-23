@@ -1,25 +1,9 @@
-# sentence_completion_model
-
-Logo
-Title and brief description
-Packages
-Installation instruction
-Data sources
-Results and evaluation
-Future works
-Acknowledgement
-License
-
-
-
-
-# 📝 Sentence Completion and Word Prediction Model
+# 📝 StupidLM - A Sentence Completion and Word Prediction Model
 
 ## 📖 Overview
 
-This project implements a **word prediction and sentence completion model** using a Naive Bayes classifier trained on sequential word patterns from a text corpus. Given the first five words of a sentence, the model predicts the next most likely word. The project uses natural language processing techniques, including tokenization and TF-IDF vectorization, to build the predictive model.
+This project implements a **word prediction and sentence completion model** using Naive Bayes and Random Forest classifiers trained on sequential word patterns from a text corpus. Given the first five words of a sentence, the model predicts the next most likely word. The project uses natural language processing techniques, including tokenization and TF-IDF vectorization, to build the predictive model.
 
----
 
 ## 📚 Table of Contents
 
@@ -27,7 +11,7 @@ This project implements a **word prediction and sentence completion model** usin
 * [Project Structure](#project-structure)
 * [Use Cases](#use-cases)
 * [Dataset](#dataset)
-* [Model Pipeline](#model-pipeline)
+* [Model Workflow](#model-workflow)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Example](#example)
@@ -41,14 +25,13 @@ This project implements a **word prediction and sentence completion model** usin
 ## 🏗️ Project Structure
 
 ```text
-├── Video Games.txt               # Text corpus used for training
-├── sentence_completion.py        # Model training and prediction code
-├── README.md                     # Project documentation
-├── requirements.txt              # Python dependencies
-└── LICENSE                       # License information
+├── Video Games.txt            
+├── sentence_completion.py        
+├── README.md                     
+├── requirements.txt             
+└── LICENSE                       
 ```
 
----
 
 ## 🎯 Use Cases
 
@@ -57,7 +40,7 @@ This project implements a **word prediction and sentence completion model** usin
 * Assistive writing tools.
 * Educational applications to improve writing skills.
 
----
+
 
 ## 📂 Dataset
 
@@ -69,28 +52,31 @@ This project implements a **word prediction and sentence completion model** usin
   * Tokenized words using NLTK.
 * **Format:** The dataset was transformed into 5-word sequences with the 6th word as the target for prediction.
 
----
 
-## 🔍 Model Pipeline
+
+## 🔍 Model Workflow
 
 1. **Data Preparation:**
-   Tokenize the text and create input sequences (5-word windows) with the next word as the label.
+     * Load and clean the text file by removing punctuations and converting text to lowercase.
+     * Tokenize the text into individual words using NLTK.
 
-2. **Vectorization:**
-   Convert the text sequences into numerical features using **TF-IDF Vectorization**.
+3. **Data Construction:**
+     * Create sequences of five consecutive words as input and the sixth word as the target.
 
-3. **Model:**
-   Train a **Multinomial Naive Bayes classifier** to predict the next word.
+4. **Vectorization:**
+     * Convert the text sequences into numerical features using **TF-IDF Vectorization**.
 
-4. **Prediction:**
-   Given a new 5-word input, predict the top 5 most probable next words and randomly select one to continue sentence generation.
+5. **Model:**
+     * Train a **Multinomial Naive Bayes and a Random Forest classifier** to predict the next word.
 
----
+6. **Prediction:**
+     * Given a new 5-word input, predict the top 5 most probable next words and randomly select one to continue sentence generation.
+
 
 ## ⚙️ Installation
-
+To set up the project locally, follow the steps below to clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/yourusername/sentence-completion-model.git
+git clone https://github.com/Nduoma132/sentence_completion_model/tree/main
 cd sentence-completion-model
 pip install -r requirements.txt
 ```
@@ -105,7 +91,7 @@ pip install -r requirements.txt
 python sentence_completion.py
 ```
 
-### 2. Enter your starting sentence (at least 5 words):
+### 2. Enter your starting sentence:
 
 ```text
 Enter text here: The world of video games
