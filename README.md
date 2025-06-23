@@ -25,7 +25,7 @@ This project implements a **word prediction and sentence completion model** usin
 
 ```text
 ├── Video Games.txt            
-├── sentence_completion.py        
+├── sentence_completion.ipynb        
 ├── README.md                     
 ├── requirements.txt             
 └── LICENSE                       
