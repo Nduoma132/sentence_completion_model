@@ -85,7 +85,7 @@ pip install -r requirements.txt
 ### 1. Run the main Python script:
 
 ```bash
-python sentence_completion.py
+python sentence_completion.ipynb
 ```
 
 ### 2. Enter your starting sentence:
